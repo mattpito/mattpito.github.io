@@ -1,9 +1,12 @@
+// Manually initialize particles with proper container control
 tsParticles.load("skills-particles", {
-  fullScreen: { enable: false },
-  fpsLimit: 60,
+  fullScreen: {
+    enable: false // This is key — disables global takeover
+  },
   background: {
     color: "#f4f4f4"
   },
+  fpsLimit: 60,
   particles: {
     number: { value: 25 },
     size: { value: 4 },
