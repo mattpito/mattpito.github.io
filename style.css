@@ -139,4 +139,8 @@ body {
   color: #888;
   font-size: 0.9rem;
 }
-
+.repo-list h3 {
+  margin: 2rem 0 1rem;
+  color: #111;
+  font-size: 1.2rem;
+}
