@@ -1,5 +1,5 @@
 const username = "mattpito";
-#document.getElementById("username").textContent = `${username}'s GitHub Portfolio`;
+// document.getElementById("username").textContent = `${username}'s GitHub Portfolio`;
 
 fetch(`https://api.github.com/users/${username}/repos`)
   .then(response => response.json())
