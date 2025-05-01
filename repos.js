@@ -3,11 +3,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const manualRepos = [
     {
-      name: "secret-repo",
-      url: "#",
-      description: "Not-Public-Repo *"
-    },
-    {
       name: "MairLab_ClinicalDB_Lightsail",
       url: "https://github.com/manthosp/MairLab_ClinicalDB_Lightsail",
       description: "Clinical database/dashboard for multimodal GBM exploration using Django backend and React frontend."
