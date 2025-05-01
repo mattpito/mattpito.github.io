@@ -3,9 +3,7 @@ tsParticles.load("skills-particles", {
   background: { color: "#f4f4f4" },
   fpsLimit: 60,
   particles: {
-    number: {
-      value: 0 // don't auto-generate
-    },
+    number: { value: 0 },
     shape: {
       type: "text",
       options: {
@@ -16,7 +14,7 @@ tsParticles.load("skills-particles", {
         }
       }
     },
-    size: { value: 16 },
+    size: { value: 14 }, // slightly smaller text
     move: {
       enable: true,
       speed: 1,
@@ -41,7 +39,20 @@ tsParticles.load("skills-particles", {
     { position: { x: 50, y: 30 }, options: { shape: { type: "text", options: { text: { value: "JS" } } } } },
     { position: { x: 60, y: 50 }, options: { shape: { type: "text", options: { text: { value: "SQL" } } } } },
     { position: { x: 70, y: 40 }, options: { shape: { type: "text", options: { text: { value: "ML" } } } } },
-    { position: { x: 80, y: 60 }, options: { shape: { type: "text", options: { text: { value: "Statistics" } } } } },
-    { position: { x: 90, y: 50 }, options: { shape: { type: "text", options: { text: { value: "Omics" } } } } }
+    { position: { x: 80, y: 60 }, options: { shape: { type: "text", options: { text: { value: "Stats" } } } } },
+    {
+      position: { x: 90, y: 50 },
+      options: {
+        shape: {
+          type: "text",
+          options: { text: { value: "Omics" } }
+        },
+        color: { value: "#A23CBD" } // custom color for Omics
+      }
+    },
+    { position: { x: 20, y: 20 }, options: { shape: { type: "text", options: { text: { value: "DNA" } } } } },
+    { position: { x: 30, y: 25 }, options: { shape: { type: "text", options: { text: { value: "RNA" } } } } },
+    { position: { x: 40, y: 20 }, options: { shape: { type: "text", options: { text: { value: "Protein" } } } } },
+    { position: { x: 50, y: 25 }, options: { shape: { type: "text", options: { text: { value: "Metabolism" } } } } }
   ]
 });
