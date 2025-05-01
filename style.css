@@ -115,3 +115,28 @@ body {
 .footer a:hover {
   text-decoration: underline;
 }
+
+.repo-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.repo-list li {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.repo-list li a {
+  font-weight: bold;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.repo-list li span {
+  color: #888;
+  font-size: 0.9rem;
+}
+
