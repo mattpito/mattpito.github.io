@@ -79,7 +79,7 @@ window.addEventListener("DOMContentLoaded", () => {
       // 🔒 Manual section
       const manualHeader = document.createElement("h3");
       manualHeader.style.marginTop = "2rem";
-      manualHeader.textContent = "🔒 Not Public / Manual Repositories";
+      manualHeader.textContent = "🔒 Not Public";
       list.appendChild(manualHeader);
 
       manualRepos.forEach(repo => {
