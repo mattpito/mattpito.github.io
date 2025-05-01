@@ -54,22 +54,15 @@ tsParticles.load("skills-particles", {
   particles: {
     number: { value: 10, density: { enable: false } },
     shape: {
-      type: "char",
-      character: [
-        { value: "R" },
-        { value: "Python" },
-        { value: "Bash" },
-        { value: "HTML" },
-        { value: "JS" },
-        { value: "ML" },
-        { value: "Omics" },
-        { value: "SQL" },
-        { value: "Stats" },
-        { value: "Linux" }
-      ]
+      type: "text",
+      options: {
+        text: {
+          value: ["R", "Python", "Bash", "HTML", "JS", "ML", "Omics", "SQL", "Stats", "Linux"]
+        }
+      }
     },
     color: { value: "#333" },
-    size: { value: 14 },
+    size: { value: 20 },
     move: { enable: true, speed: 2, bounce: true },
     links: {
       enable: true,
