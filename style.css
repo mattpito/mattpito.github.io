@@ -166,3 +166,59 @@ footer {
 .footer a:hover {
   text-decoration: underline;
 }
+
+
+/* Tile Page */
+.repo-tiles {
+  text-align: center;
+  padding: 2rem;
+}
+
+.tile-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.tile {
+  background-color: #1b1b1b;
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 250px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.tile h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.tile-desc {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+.tile:hover .tile-desc {
+  opacity: 1;
+}
+
