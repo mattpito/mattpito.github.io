@@ -1,36 +1,29 @@
 tsParticles.load("skills-particles", {
-  fullScreen: {
-    enable: false
-  },
-  background: {
-    color: "#f4f4f4"
-  },
+  fullScreen: { enable: false },
+  background: { color: "#f4f4f4" },
   fpsLimit: 60,
   particles: {
-    number: { value: 10 },
+    number: {
+      value: 0 // don't auto-generate
+    },
     shape: {
       type: "text",
       options: {
         text: {
-          value: ["R", "Python", "bash", "HTML", "JS", "SQL", "ML", "Statistics", "Omics"],
           font: "Verdana",
-          style: "",
-          weight: "400",
+          value: [],
           fill: true
         }
       }
     },
-    size: {
-      value: 16
-    },
+    size: { value: 16 },
     move: {
       enable: true,
-      speed: 1.2,
+      speed: 1,
+      direction: "none",
       outModes: { default: "bounce" }
     },
-    color: {
-      value: "#333"
-    },
+    color: { value: "#333" },
     links: {
       enable: true,
       distance: 140,
@@ -39,16 +32,16 @@ tsParticles.load("skills-particles", {
       width: 1
     }
   },
-  interactivity: {
-    events: {
-      onHover: { enable: true, mode: "grab" }
-    },
-    modes: {
-      grab: {
-        distance: 120,
-        links: { opacity: 0.6 }
-      }
-    }
-  },
-  detectRetina: true
+  detectRetina: true,
+  manualParticles: [
+    { position: { x: 10, y: 30 }, options: { shape: { type: "text", options: { text: { value: "R" } } } } },
+    { position: { x: 20, y: 50 }, options: { shape: { type: "text", options: { text: { value: "Python" } } } } },
+    { position: { x: 30, y: 40 }, options: { shape: { type: "text", options: { text: { value: "bash" } } } } },
+    { position: { x: 40, y: 60 }, options: { shape: { type: "text", options: { text: { value: "HTML" } } } } },
+    { position: { x: 50, y: 30 }, options: { shape: { type: "text", options: { text: { value: "JS" } } } } },
+    { position: { x: 60, y: 50 }, options: { shape: { type: "text", options: { text: { value: "SQL" } } } } },
+    { position: { x: 70, y: 40 }, options: { shape: { type: "text", options: { text: { value: "ML" } } } } },
+    { position: { x: 80, y: 60 }, options: { shape: { type: "text", options: { text: { value: "Statistics" } } } } },
+    { position: { x: 90, y: 50 }, options: { shape: { type: "text", options: { text: { value: "Omics" } } } } }
+  ]
 });
