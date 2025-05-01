@@ -1,4 +1,4 @@
-const username = "YOUR_USERNAME"; // Replace with your GitHub username
+const username = "mattpito"; // Replace with your GitHub username
 
 const manualRepos = [
   {
