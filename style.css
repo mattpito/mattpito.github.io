@@ -131,20 +131,18 @@ footer {
   gap: 1rem;
 }
 
-.tab-button {
+.nav-link {
+  color: #eee;
+  text-decoration: none;
   padding: 0.5rem 1rem;
   background: #222;
-  color: #eee;
-  border: 1px solid #444;
   border-radius: 5px;
-  cursor: pointer;
   font-weight: bold;
   transition: background 0.3s;
 }
 
-.tab-button:hover,
-.tab-button.active {
-  background-color: #555;
+.nav-link:hover {
+  background: #555;
 }
 
 /* Footer fixed at bottom */
