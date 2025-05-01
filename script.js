@@ -1,5 +1,5 @@
-// Load skill particles safely in main-content only
 tsParticles.load("skills-particles", {
+  fullScreen: { enable: false },
   fpsLimit: 60,
   background: {
     color: "#f4f4f4"
