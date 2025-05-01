@@ -1,6 +1,9 @@
-// Load the text shape plugin
+// Load skill particles
 tsParticles.load("skills-particles", {
   fpsLimit: 60,
+  background: {
+    color: "#f4f4f4"
+  },
   particles: {
     number: { value: 10 },
     shape: {
@@ -15,9 +18,7 @@ tsParticles.load("skills-particles", {
         }
       }
     },
-    size: {
-      value: 20
-    },
+    size: { value: 20 },
     move: {
       enable: true,
       speed: 2,
