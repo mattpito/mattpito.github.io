@@ -42,3 +42,43 @@ function setupTabs() {
 
   document.querySelector('[data-tab="all"]').click();
 }
+
+
+tsParticles.load("skills-particles", {
+  background: { color: "#f4f4f4" },
+  fpsLimit: 60,
+  interactivity: {
+    events: { onHover: { enable: true, mode: "grab" } },
+    modes: { grab: { distance: 120, links: { opacity: 0.5 } } }
+  },
+  particles: {
+    number: { value: 10, density: { enable: false } },
+    shape: {
+      type: "char",
+      character: [
+        { value: "R" },
+        { value: "Python" },
+        { value: "Bash" },
+        { value: "HTML" },
+        { value: "JS" },
+        { value: "ML" },
+        { value: "Omics" },
+        { value: "SQL" },
+        { value: "Stats" },
+        { value: "Linux" }
+      ]
+    },
+    color: { value: "#333" },
+    size: { value: 14 },
+    move: { enable: true, speed: 2, bounce: true },
+    links: {
+      enable: true,
+      distance: 150,
+      color: "#555",
+      opacity: 0.4,
+      width: 1
+    }
+  },
+  detectRetina: true
+});
+
