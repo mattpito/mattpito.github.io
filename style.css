@@ -1,3 +1,46 @@
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #111, #2c2c2c);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.bio, .humor {
+  max-width: 600px;
+  margin: 0 auto 1rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.humor {
+  font-style: italic;
+  color: #a1c4fd;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
 body {
   font-family: sans-serif;
   margin: 0;
