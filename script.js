@@ -1,28 +1,41 @@
-// Manually initialize particles with proper container control
 tsParticles.load("skills-particles", {
   fullScreen: {
-    enable: false // This is key — disables global takeover
+    enable: false
   },
   background: {
     color: "#f4f4f4"
   },
   fpsLimit: 60,
   particles: {
-    number: { value: 25 },
-    size: { value: 4 },
+    number: { value: 10 },
+    shape: {
+      type: "text",
+      options: {
+        text: {
+          value: ["R", "Python", "bash", "HTML", "JS", "SQL", "ML", "Statistics", "Omics"],
+          font: "Verdana",
+          style: "",
+          weight: "400",
+          fill: true
+        }
+      }
+    },
+    size: {
+      value: 16
+    },
     move: {
       enable: true,
-      speed: 1.5,
-      direction: "none",
+      speed: 1.2,
       outModes: { default: "bounce" }
     },
-    color: { value: "#888" },
-    shape: { type: "circle" },
+    color: {
+      value: "#333"
+    },
     links: {
       enable: true,
-      distance: 120,
-      color: "#aaa",
-      opacity: 0.4,
+      distance: 140,
+      color: "#888",
+      opacity: 0.5,
       width: 1
     }
   },
@@ -32,7 +45,7 @@ tsParticles.load("skills-particles", {
     },
     modes: {
       grab: {
-        distance: 100,
+        distance: 120,
         links: { opacity: 0.6 }
       }
     }
