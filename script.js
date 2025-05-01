@@ -1,9 +1,5 @@
-// Only particles — removed broken GitHub repo display
-
+// Load the text shape plugin
 tsParticles.load("skills-particles", {
-  background: {
-    color: "#f4f4f4"
-  },
   fpsLimit: 60,
   particles: {
     number: { value: 10 },
@@ -11,7 +7,11 @@ tsParticles.load("skills-particles", {
       type: "text",
       options: {
         text: {
-          value: ["R", "Python", "Bash", "HTML", "JS", "ML", "Omics", "SQL", "Stats", "Linux"]
+          value: ["R", "Python", "Bash", "HTML", "JS", "ML", "Omics", "SQL", "Stats", "Linux"],
+          font: "Verdana",
+          style: "",
+          weight: "400",
+          fill: true
         }
       }
     },
