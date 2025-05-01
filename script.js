@@ -17,7 +17,7 @@ tsParticles.load("skills-particles", {
     size: { value: 14 },
     move: {
       enable: true,
-      speed: 1,
+      speed: 2,
       direction: "none",
       outModes: { default: "bounce" }
     },
