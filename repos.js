@@ -18,11 +18,17 @@ window.addEventListener("DOMContentLoaded", () => {
       description: "Nextflow workflow starting from BAM files, reverse engineering to FASTQ files."
     },
     {
+      name: "3D_Omic_Integration",
+      url: "https://github.com/mattpito/3D_Omic_Integration",
+      description: "Aggregate sample modalities in 3D-ring structure for clinical intepretation of variants."
+    },
+    {
       name: "Nodular_Melanoma_Analysis",
       url: "https://github.com/mattpito/Nodular_Melanoma_Analysis",
       description: "Code for analysing Nodular Melanoma from NGS data."
     }
   ];
+
 
   const manualRepos = [
     {
